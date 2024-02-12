@@ -93,29 +93,29 @@ button {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container{
   max-width: 1024px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
-.grid {
+.grid{
   display: grid;
   gap: 1.5rem;
 }
 
-.section {
+.section{
   padding: 4.5rem 0 2rem;
 }
 
-.section__title {
+.section__title{
   position: relative;
   font-size: var(--h1-font-size);
   padding-left: 1.25rem;
   margin-bottom: 2.5rem;
 }
 
-.section__title::before {
+.section__title::before{ 
   content: '';
   position: absolute;
   top: 8px;
@@ -208,13 +208,23 @@ button {
 }
 
 /* Change background header */
+.scroll-header{
+    background-color: var(--body-color);
+    /* box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1); */
+}
 
+.scroll-header .nav__logo, .scroll-header .nav__toggle{
+    color: var(--title-color);
+}
 
+.scroll-header .nav__logo-img{
+    mix-blend-mode: difference;    
+}
 /* Active link */
 
 
 /*=============== HOME ===============*/
-.home{
+.home{ 
     gap: 0;
 }
 
@@ -288,9 +298,47 @@ button {
     }
 }
 /*=============== BUTTON ===============*/
-
+.button{
+    display: inline-block;
+    background-color: var(--black-color);
+    color: #fff;
+    padding: 1rem 1.75rem;  
+    border-radius: .25rem;
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+}
 
 /*=============== SPECIALTY ===============*/
+.specialty__button{
+    margin-left: 1.25rem;
+}
+
+.specialty__category{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 200px;
+    justify-content: center;
+    row-gap: 2.5rem;
+}
+
+.specialty__img{
+    width: 60px;
+    margin-bottom: 1rem;
+    transition: .4s;    
+}
+
+.specialty__group{
+    text-align: center;  
+}
+
+.specialty__group{
+    font-style: var(--h2-font-size);
+    margin-bottom: .25rem;
+}
+
+.specialty__group:hover .specialty__img{
+    transform: translateY(-.25rem);
+}
 
 
 /*=============== PRODUCTS ===============*/
