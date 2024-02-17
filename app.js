@@ -9,6 +9,14 @@ navMenu.classList.add('show-menu')
 })
 }
 
+onload = () =>{
+    const load = document.getElementById('load')
+
+    setTimeout(()=>{
+        load.style.display = 'none'
+    }, 2500)
+}
+
 /* Validate if constant exists */
 if (navclose) {
 navclose.addEventListener('click', () =>{
